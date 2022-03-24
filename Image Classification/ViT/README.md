@@ -1,4 +1,4 @@
-# Vision Transformer
+# ViT: Transformer 在 CV 的挖坑之作
 > In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and ***a pure transformer*** applied directly to sequences of image patches can perform very well on image classification tasks. 
 
 &emsp;&emsp;我 ViT 今天就是要给 Tranformer 正名！（指只用个 encoder 的屑 pure transformer ...）  
@@ -42,6 +42,5 @@ class PatchEmbed(nn.Module):
 &emsp;&emsp;与同样只用 encoder 的 BERT 相同，加上 [CLS] 和 position embedding。（P.S：这里的位置编码为一维可训练的参数！！）文章中还分析了二维 PE 和组合策略，见原文 D.3 附录。  
 
 ## 二、Results and conclusion
-&emsp;&emsp;效果自然是嘎嘎地，详细见原文，不多赘述了。文章 novelty 挺平庸的但是相关实验与分析很丰富，同时启发了后续 transformer-based 模型的发展，还展望了 CV 的预训练技术，算得上一篇相当扎实的经典文章。
-
+&emsp;&emsp;效果自然是嘎嘎地，详细见原文，不多赘述了。虽然文章 novelty 平庸而且很快被 MAE 的光芒所掩盖，但是相关实验与分析很丰富，启发了后续 transformer-based 模型的发展，还展望了 CV 的预训练技术，算得上一篇相当扎实的文章。
 
